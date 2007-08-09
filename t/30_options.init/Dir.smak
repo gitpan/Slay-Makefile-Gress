@@ -1,0 +1,15 @@
+
+test:	{ my @t = <*.t>;
+	  s/\.t$/.ok/ foreach @t;
+	  @t;
+	}
+
+%.ok:	%.out %.out.exp
+	diff $DEP0 $DEP1 > $TARGET
+
+%.out:
+	{ my ($maker, $target, $deps, $matches) = @_;
+	  my $dbg = $ENV{DEBUG} ? '-d ' : '';
+	  system "$^X $dbg-I../../blib/lib $matches->[0].t 2>&1 | grep -v Gress.pm | egrep . > $target";
+	}
+
