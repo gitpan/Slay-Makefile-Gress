@@ -14,13 +14,13 @@ use FindBin;
 use lib "$FindBin::RealBin/../../tbin";
 use Slay::Makefile 0.02;
 
-our $VERSION = "0.01";
+our $VERSION = "0.02";
 
 # $Id$
 
 =head1 NAME
 
-Slay::Makefile::Gress
+Slay::Makefile::Gress - Use Slay::Makefile for software regression testing
 
 =head1 DESCRIPTION
 

@@ -10,6 +10,6 @@ test:	{ my @t = <*.t>;
 %.out:
 	{ my ($maker, $target, $deps, $matches) = @_;
 	  my $dbg = $ENV{DEBUG} ? '-d ' : '';
-	  system "$^X $dbg-I../../blib/lib $matches->[0].t 2>&1 | egrep . | grep -v Gress.pm | grep -v Maker.pm > $target";
+	  system "$^X $dbg-I../../blib/lib $matches->[0].t 2>&1 | egrep . | grep -v Gress.pm | grep -v Maker.pm | grep -v '0 tests' > $target";
 	}
 

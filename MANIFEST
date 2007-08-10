@@ -38,7 +38,6 @@ t/20_errs.init/no_init.out.exp
 t/20_errs.init/no_init.t
 t/20_errs.init/no_tests.init/Dir.smak
 t/20_errs.init/no_tests.out.exp
-t/20_errs.init/no_tests.skip.pl
 t/20_errs.init/no_tests.t
 t/20_errs.t
 t/30_options.init/Dir.smak
@@ -74,4 +73,3 @@ t/30_options.init/test.out.exp
 t/30_options.init/test.t
 t/30_options.t
 t/blib/lib/SkipTest.pm
-META.yml                                 Module meta-data (added by MakeMaker)
