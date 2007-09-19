@@ -1,0 +1,12 @@
+CHANGES for vcp - Version CoPy
+
+0.03 Wed Sep 19 13:14:16 CDT 2007
+   - Made regression test script compatible with Windows (thanks to 
+     Slaven Rezik for help!).
+   - Added README and CHANGES files
+
+0.02 Fri Aug 10 10:25:35 CDT 2007
+   - Fixed expects for some systems
+
+0.01 Wed Aug 08 14:17:02 CDT 2007
+   - Initial release

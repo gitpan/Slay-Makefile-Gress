@@ -7,6 +7,9 @@ use base Exporter;
 use strict;
 use warnings;
 
+use File::Path qw(rmtree);
+use File::Copy::Recursive qw(dircopy);
+
 use Test::More;
 use Carp;
 
@@ -14,7 +17,7 @@ use FindBin;
 use lib "$FindBin::RealBin/../../tbin";
 use Slay::Makefile 0.02;
 
-our $VERSION = "0.02";
+our $VERSION = "0.03";
 
 # $Id$
 
@@ -196,8 +199,11 @@ sub do_tests {
 
     # First create the run subdirectory for doing testing
     my $run = "$myname$options->{run}";
-    system "rm -rf $run" if -d $run;
-    system "cp -r $init $run";
+#    system "rm -rf $run" if -d $run;
+#    system "cp -r $init $run";
+
+    rmtree $run if -d $run;
+    dircopy $init, $run;
 
     chdir $run;
 

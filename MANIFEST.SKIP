@@ -1,6 +1,7 @@
 # Generic files
 ~$
 .bak$
+tar.gz$
 
 # Specific files
 ^Makefile$
