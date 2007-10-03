@@ -4,7 +4,7 @@ test:	{ my @t = <*.t>;
 	  @t;
 	}
 
-%.ok:	%.out %.out.exp
+%.ok:	%.out.exp %.out
 	diff $DEP0 $DEP1 > $TARGET
 
 %.out:

@@ -17,7 +17,7 @@ use FindBin;
 use lib "$FindBin::RealBin/../../tbin";
 use Slay::Makefile 0.02;
 
-our $VERSION = "0.03";
+our $VERSION = "0.04";
 
 # $Id$
 
@@ -199,8 +199,6 @@ sub do_tests {
 
     # First create the run subdirectory for doing testing
     my $run = "$myname$options->{run}";
-#    system "rm -rf $run" if -d $run;
-#    system "cp -r $init $run";
 
     rmtree $run if -d $run;
     dircopy $init, $run;

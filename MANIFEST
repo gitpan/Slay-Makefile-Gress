@@ -30,6 +30,7 @@ t/20_errs.init/bad_make.out.exp
 t/20_errs.init/bad_make.t
 t/20_errs.init/bad_smak.init/Dir.smak
 t/20_errs.init/bad_smak.out.exp
+t/20_errs.init/bad_smak.skip.pl
 t/20_errs.init/bad_smak.t
 t/20_errs.init/Dir.smak
 t/20_errs.init/no_build.init/Dir.smak
@@ -50,6 +51,7 @@ t/30_options.init/opts_debug.out.exp
 t/30_options.init/opts_debug.t
 t/30_options.init/opts_default.init/Dir.smak
 t/30_options.init/opts_default.out.exp
+t/30_options.init/opts_default.skip.pl
 t/30_options.init/opts_default.t
 t/30_options.init/opts_strict0.init/Dir.smak
 t/30_options.init/opts_strict0.out.exp

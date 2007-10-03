@@ -1,5 +1,8 @@
 CHANGES for vcp - Version CoPy
 
+0.04 Wed Oct 03 15:52:22 CDT 2007
+   - Hopefully fixed regression suite for perl 5.6.2.
+
 0.03 Wed Sep 19 13:14:16 CDT 2007
    - Made regression test script compatible with Windows (thanks to 
      Slaven Rezik for help!).
