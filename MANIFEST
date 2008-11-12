@@ -76,3 +76,4 @@ t/30_options.init/test.out.exp
 t/30_options.init/test.t
 t/30_options.t
 t/blib/lib/SkipTest.pm
+META.yml                                 Module meta-data (added by MakeMaker)
