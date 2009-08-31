@@ -17,7 +17,7 @@ use FindBin;
 use lib "$FindBin::RealBin/../../tbin";
 use Slay::Makefile 0.02;
 
-our $VERSION = "0.06";
+our $VERSION = "0.07";
 
 # $Id$
 

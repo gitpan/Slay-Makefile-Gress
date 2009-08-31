@@ -5,7 +5,7 @@ test:	{ my @t = <*.t>;
 	}
 
 %.ok:	%.out.exp %.out
-	diff $DEP0 $DEP1 > $TARGET
+	diff -i $DEP0 $DEP1 > $TARGET
 
 %.out:
 	{ my ($maker, $target, $deps, $matches) = @_;
