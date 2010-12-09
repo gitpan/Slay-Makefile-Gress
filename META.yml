@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:                Slay-Makefile-Gress
-version:             0.07
+version:             0.08
 abstract:            Use Slay::Makefile for software regression testing
 license:             ~
 author:              

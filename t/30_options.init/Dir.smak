@@ -5,11 +5,14 @@ test:	{ my @t = <*.t>;
 	}
 
 %.ok:	%.out.exp %.out
-	diff -i $DEP0 $DEP1 > $TARGET
+	diff -iu $DEP0 $DEP1 > $TARGET
 
 %.out:
 	{ my ($maker, $target, $deps, $matches) = @_;
 	  my $dbg = $ENV{DEBUG} ? '-d ' : '';
-	  system "$^X $dbg-I../../blib/lib $matches->[0].t 2>&1 | grep -v Gress.pm | egrep . > $target";
+	  system "$^X $dbg-I../../blib/lib $matches->[0].t 2>&1 |
+                  $^X -ne 's/\\\\n/\\n/g;
+                           s/\\?\\^:/?-xism:/;
+                           print if !/Gress.pm/ && /./' > $target";
 	}
 
